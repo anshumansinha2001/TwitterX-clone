@@ -1,10 +1,8 @@
-Certainly! Crafting a concise and informative GitHub project description is crucial for attracting users and contributors. Here's a template for your Twitter clone project description:
-
 ---
 
 # Twitter Clone with Tailwind CSS
 
-![Twitter Clone](link_to_your_project_image.png)
+![Twitter Clone](ss1.png)
 
 ## Overview
 
@@ -40,7 +38,6 @@ This project is licensed under the @anshumansinha.
 ## Acknowledgments
 
 - The project was inspired by the Twitter interface.
-- Special thanks to the contributors who have helped make this project better.
 
 ---
 
