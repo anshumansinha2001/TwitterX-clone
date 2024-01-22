@@ -28,18 +28,14 @@ This project is a Twitter clone that replicates the iconic Twitter UI using Tail
 
 Follow these steps to get the project up and running on your local machine:
 
-1. Clone the repository: `git clone https://github.com/theanshumansinha/twitter-clone.git`
+1. Clone the repository: `git clone https://github.com/theanshumansinha/TwitterX-clone.git`
 2. Navigate to the project directory: `cd twitter-clone`
 3. Install dependencies: `npm install`
 4. Start the development server: `npm run dev`
 
-## Contribution Guidelines
-
-We welcome contributions! If you'd like to contribute to the project, please follow our [contribution guidelines](link_to_contributing.md).
-
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](link_to_license.md) file for details.
+This project is licensed under the @anshumansinha.
 
 ## Acknowledgments
 
@@ -48,4 +44,3 @@ This project is licensed under the MIT License - see the [LICENSE](link_to_licen
 
 ---
 
-Customize the placeholders (such as `your-username`, `link_to_your_project_image.png`, etc.) with your specific details. Additionally, create the corresponding `contributing.md` and `license.md` files and provide the appropriate links in your project description.
