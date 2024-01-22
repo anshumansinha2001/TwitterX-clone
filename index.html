@@ -15,18 +15,19 @@
     <div class="flex md:ml-28 md:mr-16">
 
 
-        <section class="FIRST h-full sticky top-0 md:w-[45%] pl-4 mr-2">
-            <div class="logo invert mt-4 px-4">
-                <svg viewBox="0 0 24 24" aria-hidden="true"
-                    class="w-8 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-lrsllp r-1nao33i r-16y2uox r-8kz0gk">
-                    <g>
-                        <path
-                            d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
-                        </path>
-                    </g>
-                </svg>
-            </div>
-            <div class="slidebar flex flex-col mt-4">
+        <section class="FIRST h-fit sticky top-0 w-16 md:w-[45%] md:pl-4 md:mr-2">
+
+            <div class="slidebar flex flex-col">
+                <div class="logo invert p-4 w-fit">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"
+                        class="w-8 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-lrsllp r-1nao33i r-16y2uox r-8kz0gk">
+                        <g>
+                            <path
+                                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+                            </path>
+                        </g>
+                    </svg>
+                </div>
                 <ul class="flex flex-col text-xl space-y-2 ">
                     <li
                         class="flex justify-start items-center font-bold gap-4 md:w-fit px-4 py-1 hover:bg-gray-900 hover:cursor-pointer hover:rounded-full hover:bg-opacity-80">
@@ -128,7 +129,7 @@
 
 
         <section class="SECOND  md:w-full mr-7 border-[1px] border-opacity-25 border-x-white border-y-black">
-            <div class="Top flex sticky top-0  hover:cursor-pointer bg-black bg-opacity-75">
+            <div class="Top flex sticky top-0 h-fit  hover:cursor-pointer bg-black bg-opacity-75">
                 <div class="absolute w-14 h-1 rounded-full bg-[#1d9bf0] bottom-0 left-[18.2%]"></div>
                 <div class="Left flex py-3.5 justify-center w-1/2 font-semisfont-semibold text-base hover:bg-[#1e2026]">
                     For you
@@ -197,7 +198,8 @@
                             </span>
                         </div>
                         <div>
-                            <button class="rounded-full bg-[#1d9bf0] opacity-60 px-4 py-1 font-semibold">Post</button>
+                            <button id="postbtn"
+                                class="rounded-full bg-[#1d9bf0] opacity-60 px-4 py-1 font-semibold">Post</button>
                         </div>
                     </div>
 
@@ -220,67 +222,69 @@
                             alt="profile-pic">
                     </div>
                     <div class="w-full">
-                        <div class="flex items-center h-5">
-                            <h4 class="font-semibold hover:underline hover:cursor-pointer">Shraddha Kapoor</h4>
-                            <span class="material-symbols-outlined text-lg p-1 text-[#1d9bf0]">
-                                verified
-                            </span>
-                            <span class="opacity-50">@ShraddhaKapoor · Jan 7</span>
+                        <div class="flex justify-between items-center h-fit">
+                            <div class="flex items-center">
+                                <h4 class="font-semibold hover:underline hover:cursor-pointer">Shraddha Kapoor</h4>
+                                <span class="material-symbols-outlined text-lg p-1 text-[#1d9bf0]">
+                                    verified
+                                </span>
+                                <span class="opacity-50">@ShraddhaKapoor · Jan 7</span>
+                            </div>
+
                             <span
-                                class="material-symbols-outlined opacity-50 rounded-full p-1 hover:cursor-pointer hover:bg-[#1e2026] relative left-[9rem]">
+                                class="material-symbols-outlined opacity-50 rounded-full p-1 hover:cursor-pointer hover:bg-[#1e2026]">
                                 more_horiz
                             </span>
                         </div>
-                        <span class=" leading-tight">All these images and memes making me super FOMO now 😍
+                        <div class=" leading-tight text-start">
+                            All these images and memes making me super FOMO now 😍
                             Lakshadweep has such pristine beaches and coastlines, thriving local culture, I’m on the
                             verge of booking an impulse chhutti ❤️
                             This year, why not <span
-                                class="text-[#1d9bf0] hover:underline cursor-pointer">#ExploreIndianIslands</span></span>
+                                class="text-[#1d9bf0] hover:underline cursor-pointer">#ExploreIndianIslands</span>
+                        </div>
                     </div>
                 </div>
 
                 <div class="Content-post overflow-hidden  ml-16 mr-5 rounded-2xl">
-                    <img src="https://pbs.twimg.com/media/GDOCy0GbcAACukS?format=jpg&name=900x900" alt="loading_error">
+                    <img src="https://pbs.twimg.com/media/GDOCy0GbcAACukS?format=jpg&name=small" alt="loading_error">
                 </div>
 
-                <div class="Likes_Share flex justify-between ml-16 mr-5 opacity-50 p-3">
-                    <div class="flex gap-1 items-center">
-                        <span
-                            class="material-symbols-outlined rounded-full hover:bg-[#1e2026] hover:cursor-pointer text-xl">
+                <div class="Likes_Share flex justify-between ml-16 mr-5 text-slate-400 my-2">
+                    <div
+                        class="flex gap-1 items-center hover:text-blue-600 hover:bg-[#1e2026] hover:cursor-pointer rounded-full p-1.5">
+                        <span class="material-symbols-outlined text-xl">
                             chat_bubble
                         </span>
                         <span class="text-base">1K</span>
                     </div>
-                    <div class="flex gap-1 items-center">
-                        <span
-                            class="material-symbols-outlined hover:cursor-pointer rounded-full hover:bg-[#1e2026] text-2xl">
+                    <div
+                        class="flex gap-1 items-center  hover:cursor-pointer rounded-full hover:bg-[#1e2026] hover:text-lime-400 p-1.5">
+                        <span class="material-symbols-outlined text-2xl">
                             sync
                         </span>
                         <span class="text-base">20K</span>
                     </div>
-                    <div class="flex gap-1 items-center">
-                        <span
-                            class="material-symbols-outlined hover:cursor-pointer rounded-full hover:bg-[#1e2026] text-2xl">
+                    <div
+                        class="flex gap-1 items-center hover:cursor-pointer rounded-full hover:bg-[#1e2026] hover:text-red-500 p-1.5">
+                        <span class="material-symbols-outlined text-2xl">
                             favorite
                         </span>
                         <span class="text-base">1K</span>
                     </div>
-                    <div class="flex gap-1 items-center">
-                        <span
-                            class="material-symbols-outlined hover:cursor-pointer rounded-full hover:bg-[#1e2026] text-2xl">
+                    <div
+                        class="flex gap-1 items-center hover:cursor-pointer rounded-full hover:bg-[#1e2026] hover:text-sky-400 p-1.5">
+                        <span class="material-symbols-outlined text-2xl">
                             align_vertical_bottom
                         </span>
                         <span class="text-base">1K</span>
                     </div>
-                    <div class="flex gap-1 items-center">
-                        <span
-                            class="material-symbols-outlined text-2xl hover:cursor-pointer rounded-full hover:bg-[#1e2026] pt-1">
+                    <div
+                        class="flex gap-1 items-center hover:cursor-pointer rounded-full hover:bg-[#1e2026] hover:text-yellow-500 p-1.5">
+                        <span class="material-symbols-outlined text-2xl">
                             bookmark
                         </span>
-                        <span
-                            class="material-symbols-outlined hover:cursor-pointer rounded-full hover:bg-[#1e2026] text-2xl">
-                            ios_share
-                        </span>
+                        <span class="text-base">1K</span>
                     </div>
                 </div>
             </div>
@@ -296,64 +300,65 @@
                             alt="profile-pic">
                     </div>
                     <div class="w-full">
-                        <div class="flex items-center h-5">
-                            <h4 class="font-semibold hover:underline hover:cursor-pointer">Virat Kohli</h4>
-                            <span class="material-symbols-outlined text-lg p-1 text-[#1d9bf0]">
-                                verified
-                            </span>
-                            <span class="opacity-50">@imVkohli · Dec 12, 2023</span>
+                        <div class="flex justify-between items-center h-fit">
+                            <div class="flex items-center">
+                                <h4 class="font-semibold hover:underline hover:cursor-pointer">Virat Kohli</h4>
+                                <span class="material-symbols-outlined text-lg p-1 text-[#1d9bf0]">
+                                    verified
+                                </span>
+                                <span class="opacity-50">@imVkohli · Dec 12, 2023</span>
+                            </div>
+
                             <span
-                                class="material-symbols-outlined opacity-50 rounded-full p-1 hover:cursor-pointer hover:bg-[#1e2026] relative left-[12rem]">
+                                class="material-symbols-outlined opacity-50 rounded-full p-1 hover:cursor-pointer hover:bg-[#1e2026]">
                                 more_horiz
                             </span>
                         </div>
-                        <span class=" leading-tight"><span
-                                class="text-[#1d9bf0] hover:underline cursor-pointer">#Virushka</span>😍</span>
+                        <div class=" leading-tight text-start"><span
+                                class="text-[#1d9bf0] hover:underline cursor-pointer">#Virushka</span>😍
+                        </div>
                     </div>
                 </div>
 
                 <div class="Content-post overflow-hidden  ml-16 mr-5 rounded-2xl">
-                    <img src="https://pbs.twimg.com/media/GBIcHa_aoAA0WIf?format=jpg&name=900x900" alt="loading_error">
+                    <img src="https://pbs.twimg.com/media/GBIcHa_aoAA0WIf?format=jpg&name=small" alt="loading_error">
                 </div>
 
-                <div class="Likes_Share flex justify-between ml-16 mr-5 opacity-50 p-3">
-                    <div class="flex gap-1 items-center">
-                        <span
-                            class="material-symbols-outlined rounded-full hover:bg-[#1e2026] hover:cursor-pointer text-xl">
+                <div class="Likes_Share flex justify-between ml-16 mr-5 text-slate-400 my-2">
+                    <div
+                        class="flex gap-1 items-center hover:text-blue-600 hover:bg-[#1e2026] hover:cursor-pointer rounded-full p-1.5">
+                        <span class="material-symbols-outlined text-xl">
                             chat_bubble
                         </span>
                         <span class="text-base">1K</span>
                     </div>
-                    <div class="flex gap-1 items-center">
-                        <span
-                            class="material-symbols-outlined hover:cursor-pointer rounded-full hover:bg-[#1e2026] text-2xl">
+                    <div
+                        class="flex gap-1 items-center  hover:cursor-pointer rounded-full hover:bg-[#1e2026] hover:text-lime-400 p-1.5">
+                        <span class="material-symbols-outlined text-2xl">
                             sync
                         </span>
                         <span class="text-base">20K</span>
                     </div>
-                    <div class="flex gap-1 items-center">
-                        <span
-                            class="material-symbols-outlined hover:cursor-pointer rounded-full hover:bg-[#1e2026] text-2xl">
+                    <div
+                        class="flex gap-1 items-center hover:cursor-pointer rounded-full hover:bg-[#1e2026] hover:text-red-500 p-1.5">
+                        <span class="material-symbols-outlined text-2xl">
                             favorite
                         </span>
                         <span class="text-base">1K</span>
                     </div>
-                    <div class="flex gap-1 items-center">
-                        <span
-                            class="material-symbols-outlined hover:cursor-pointer rounded-full hover:bg-[#1e2026] text-2xl">
+                    <div
+                        class="flex gap-1 items-center hover:cursor-pointer rounded-full hover:bg-[#1e2026] hover:text-sky-400 p-1.5">
+                        <span class="material-symbols-outlined text-2xl">
                             align_vertical_bottom
                         </span>
                         <span class="text-base">1K</span>
                     </div>
-                    <div class="flex gap-1 items-center">
-                        <span
-                            class="material-symbols-outlined text-2xl hover:cursor-pointer rounded-full hover:bg-[#1e2026] pt-1">
+                    <div
+                        class="flex gap-1 items-center hover:cursor-pointer rounded-full hover:bg-[#1e2026] hover:text-yellow-500 p-1.5">
+                        <span class="material-symbols-outlined text-2xl">
                             bookmark
                         </span>
-                        <span
-                            class="material-symbols-outlined hover:cursor-pointer rounded-full hover:bg-[#1e2026] text-2xl">
-                            ios_share
-                        </span>
+                        <span class="text-base">1K</span>
                     </div>
                 </div>
             </div>
@@ -369,18 +374,20 @@
                             alt="profile-pic">
                     </div>
                     <div class="w-full">
-                        <div class="flex items-center h-5">
-                            <h4 class="font-semibold hover:underline hover:cursor-pointer">NASA</h4>
-                            <span class="material-symbols-outlined text-lg p-1 text-[#1d9bf0]">
-                                verified
-                            </span>
-                            <span class="opacity-50">@NASA · Jan 20</span>
+                        <div class="flex justify-between items-center h-fit">
+                            <div class="flex items-center">
+                                <h4 class="font-semibold hover:underline hover:cursor-pointer">NASA</h4>
+                                <span class="material-symbols-outlined text-lg p-1 text-[#1d9bf0]">
+                                    verified
+                                </span>
+                                <span class="opacity-50">@NASA · Jan 20</span>
+                            </div>
                             <span
-                                class="material-symbols-outlined opacity-50 rounded-full p-1 hover:cursor-pointer hover:bg-[#1e2026] relative left-[18rem]">
+                                class="material-symbols-outlined opacity-50 rounded-full p-1 hover:cursor-pointer hover:bg-[#1e2026]">
                                 more_horiz
                             </span>
                         </div>
-                        <span class=" leading-tight">Watch the NASA <span
+                        <div class=" leading-tight text-start">Watch the NASA <span
                                 class="text-[#1d9bf0] hover:underline cursor-pointer">#SpaceApps</span>
                             Challenge Global Winners
                             announcement on
@@ -389,7 +396,8 @@
                             <br>
                             Former NASA astronaut Dr. Cady Coleman will reveal the 10 Global Winners live on
                             <span class="text-[#1d9bf0] hover:underline cursor-pointer">@SpaceApps</span>
-                            and announce the 2024 hackathon dates.</span>
+                            and announce the 2024 hackathon dates.
+                        </div>
                     </div>
                 </div>
 
@@ -397,44 +405,41 @@
                     <img src="https://pbs.twimg.com/media/GEOsqIwWoAEU1Ib?format=jpg&name=small" alt="post">
                 </div>
 
-                <div class="Likes_Share flex justify-between ml-16 mr-5 opacity-50 p-3">
-                    <div class="flex gap-1 items-center">
-                        <span
-                            class="material-symbols-outlined rounded-full hover:bg-[#1e2026] hover:cursor-pointer text-xl">
+                <div class="Likes_Share flex justify-between ml-16 mr-5 text-slate-400 my-2">
+                    <div
+                        class="flex gap-1 items-center hover:text-blue-600 hover:bg-[#1e2026] hover:cursor-pointer rounded-full p-1.5">
+                        <span class="material-symbols-outlined text-xl">
                             chat_bubble
                         </span>
-                        <span class="text-base">1M</span>
+                        <span class="text-base">1K</span>
                     </div>
-                    <div class="flex gap-1 items-center">
-                        <span
-                            class="material-symbols-outlined hover:cursor-pointer rounded-full hover:bg-[#1e2026] text-2xl">
+                    <div
+                        class="flex gap-1 items-center  hover:cursor-pointer rounded-full hover:bg-[#1e2026] hover:text-lime-400 p-1.5">
+                        <span class="material-symbols-outlined text-2xl">
                             sync
                         </span>
-                        <span class="text-base">20M</span>
+                        <span class="text-base">20K</span>
                     </div>
-                    <div class="flex gap-1 items-center">
-                        <span
-                            class="material-symbols-outlined hover:cursor-pointer rounded-full hover:bg-[#1e2026] text-2xl">
+                    <div
+                        class="flex gap-1 items-center hover:cursor-pointer rounded-full hover:bg-[#1e2026] hover:text-red-500 p-1.5">
+                        <span class="material-symbols-outlined text-2xl">
                             favorite
                         </span>
                         <span class="text-base">1K</span>
                     </div>
-                    <div class="flex gap-1 items-center">
-                        <span
-                            class="material-symbols-outlined hover:cursor-pointer rounded-full hover:bg-[#1e2026] text-2xl">
+                    <div
+                        class="flex gap-1 items-center hover:cursor-pointer rounded-full hover:bg-[#1e2026] hover:text-sky-400 p-1.5">
+                        <span class="material-symbols-outlined text-2xl">
                             align_vertical_bottom
                         </span>
                         <span class="text-base">1K</span>
                     </div>
-                    <div class="flex gap-1 items-center">
-                        <span
-                            class="material-symbols-outlined text-2xl hover:cursor-pointer rounded-full hover:bg-[#1e2026] pt-1">
+                    <div
+                        class="flex gap-1 items-center hover:cursor-pointer rounded-full hover:bg-[#1e2026] hover:text-yellow-500 p-1.5">
+                        <span class="material-symbols-outlined text-2xl">
                             bookmark
                         </span>
-                        <span
-                            class="material-symbols-outlined hover:cursor-pointer rounded-full hover:bg-[#1e2026] text-2xl">
-                            ios_share
-                        </span>
+                        <span class="text-base">1K</span>
                     </div>
                 </div>
             </div>
@@ -450,20 +455,24 @@
                             alt="profile-pic">
                     </div>
                     <div class="w-full">
-                        <div class="flex items-center h-5">
-                            <h4 class="font-semibold hover:underline hover:cursor-pointer">Narendra Modi</h4>
-                            <span class="material-symbols-outlined text-lg p-1 text-[#1d9bf0]">
-                                verified
-                            </span>
-                            <span class="opacity-50">@narendramodi · 5h</span>
+                        <div class="flex justify-between items-center h-fit">
+                            <div class="flex items-center">
+                                <h4 class="font-semibold hover:underline hover:cursor-pointer">Narendra Modi</h4>
+                                <span class="material-symbols-outlined text-lg p-1 text-[#1d9bf0]">
+                                    verified
+                                </span>
+                                <span class="opacity-50">@narendramodi · 5h</span>
+                            </div>
                             <span
-                                class="material-symbols-outlined opacity-50 rounded-full p-1 hover:cursor-pointer hover:bg-[#1e2026] relative left-[12rem]">
+                                class="material-symbols-outlined opacity-50 rounded-full p-1 hover:cursor-pointer hover:bg-[#1e2026]">
                                 more_horiz
                             </span>
                         </div>
-                        <span class=" leading-tight">Prime Minister Narendra Modi visited the Arichal Munai, the point
+                        <div class=" leading-tight text-start">Prime Minister Narendra Modi visited the Arichal Munai,
+                            the point
                             from where the Ram Setu was built, near Dhanushkodi in Tamil Nadu. He took stock of the
-                            point near the sea.</span>
+                            point near the sea.
+                        </div>
                     </div>
                 </div>
 
@@ -477,44 +486,41 @@
 
                 </div>
 
-                <div class="Likes_Share flex justify-between ml-16 mr-5 opacity-50 p-3">
-                    <div class="flex gap-1 items-center">
-                        <span
-                            class="material-symbols-outlined rounded-full hover:bg-[#1e2026] hover:cursor-pointer text-xl">
+                <div class="Likes_Share flex justify-between ml-16 mr-5 text-slate-400 my-2">
+                    <div
+                        class="flex gap-1 items-center hover:text-blue-600 hover:bg-[#1e2026] hover:cursor-pointer rounded-full p-1.5">
+                        <span class="material-symbols-outlined text-xl">
                             chat_bubble
                         </span>
-                        <span class="text-base">1M</span>
+                        <span class="text-base">1K</span>
                     </div>
-                    <div class="flex gap-1 items-center">
-                        <span
-                            class="material-symbols-outlined hover:cursor-pointer rounded-full hover:bg-[#1e2026] text-2xl">
+                    <div
+                        class="flex gap-1 items-center  hover:cursor-pointer rounded-full hover:bg-[#1e2026] hover:text-lime-400 p-1.5">
+                        <span class="material-symbols-outlined text-2xl">
                             sync
                         </span>
                         <span class="text-base">20K</span>
                     </div>
-                    <div class="flex gap-1 items-center">
-                        <span
-                            class="material-symbols-outlined hover:cursor-pointer rounded-full hover:bg-[#1e2026] text-2xl">
+                    <div
+                        class="flex gap-1 items-center hover:cursor-pointer rounded-full hover:bg-[#1e2026] hover:text-red-500 p-1.5">
+                        <span class="material-symbols-outlined text-2xl">
                             favorite
                         </span>
-                        <span class="text-base">1B</span>
+                        <span class="text-base">1K</span>
                     </div>
-                    <div class="flex gap-1 items-center">
-                        <span
-                            class="material-symbols-outlined hover:cursor-pointer rounded-full hover:bg-[#1e2026] text-2xl">
+                    <div
+                        class="flex gap-1 items-center hover:cursor-pointer rounded-full hover:bg-[#1e2026] hover:text-sky-400 p-1.5">
+                        <span class="material-symbols-outlined text-2xl">
                             align_vertical_bottom
                         </span>
                         <span class="text-base">1K</span>
                     </div>
-                    <div class="flex gap-1 items-center">
-                        <span
-                            class="material-symbols-outlined text-2xl hover:cursor-pointer rounded-full hover:bg-[#1e2026] pt-1">
+                    <div
+                        class="flex gap-1 items-center hover:cursor-pointer rounded-full hover:bg-[#1e2026] hover:text-yellow-500 p-1.5">
+                        <span class="material-symbols-outlined text-2xl">
                             bookmark
                         </span>
-                        <span
-                            class="material-symbols-outlined hover:cursor-pointer rounded-full hover:bg-[#1e2026] text-2xl">
-                            ios_share
-                        </span>
+                        <span class="text-base">1K</span>
                     </div>
                 </div>
             </div>
@@ -530,21 +536,23 @@
                             alt="profile-pic">
                     </div>
                     <div class="w-full">
-                        <div class="flex items-center h-5">
-                            <h4 class="font-semibold hover:underline hover:cursor-pointer">Ajey Nagar</h4>
-                            <span class="material-symbols-outlined text-lg p-1 text-[#1d9bf0]">
-                                verified
-                            </span>
-                            <span class="opacity-50">@CarryMinati
-                                ·
-                                Jan 11</span>
+                        <div class="flex justify-between items-center h-fit">
+                            <div class="flex items-center">
+                                <h4 class="font-semibold hover:underline hover:cursor-pointer">Ajey Nagar</h4>
+                                <span class="material-symbols-outlined text-lg p-1 text-[#1d9bf0]">
+                                    verified
+                                </span>
+                                <span class="opacity-50">@CarryMinati · Jan 11</span>
+                            </div>
                             <span
-                                class="material-symbols-outlined opacity-50 rounded-full p-1 hover:cursor-pointer hover:bg-[#1e2026] relative left-[14rem]">
+                                class="material-symbols-outlined opacity-50 rounded-full p-1 hover:cursor-pointer hover:bg-[#1e2026]">
                                 more_horiz
                             </span>
                         </div>
-                        <span class=" leading-tight">Nyi gaadi leli hai, thank you for the support. congratulations likh
-                            dena.</span>
+                        <div class=" leading-tight text-start">Nyi gaadi leli hai, thank you for the support.
+                            congratulations likh
+                            dena.
+                        </div>
                     </div>
                 </div>
 
@@ -552,44 +560,41 @@
                     <img src="https://pbs.twimg.com/media/GDjC4a6XwAATDOv?format=jpg&name=small" alt="loading_error">
                 </div>
 
-                <div class="Likes_Share flex justify-between ml-16 mr-5 opacity-50 p-3">
-                    <div class="flex gap-1 items-center">
-                        <span
-                            class="material-symbols-outlined rounded-full hover:bg-[#1e2026] hover:cursor-pointer text-xl">
+                <div class="Likes_Share flex justify-between ml-16 mr-5 text-slate-400 my-2">
+                    <div
+                        class="flex gap-1 items-center hover:text-blue-600 hover:bg-[#1e2026] hover:cursor-pointer rounded-full p-1.5">
+                        <span class="material-symbols-outlined text-xl">
                             chat_bubble
                         </span>
                         <span class="text-base">1K</span>
                     </div>
-                    <div class="flex gap-1 items-center">
-                        <span
-                            class="material-symbols-outlined hover:cursor-pointer rounded-full hover:bg-[#1e2026] text-2xl">
+                    <div
+                        class="flex gap-1 items-center  hover:cursor-pointer rounded-full hover:bg-[#1e2026] hover:text-lime-400 p-1.5">
+                        <span class="material-symbols-outlined text-2xl">
                             sync
                         </span>
                         <span class="text-base">20K</span>
                     </div>
-                    <div class="flex gap-1 items-center">
-                        <span
-                            class="material-symbols-outlined hover:cursor-pointer rounded-full hover:bg-[#1e2026] text-2xl">
+                    <div
+                        class="flex gap-1 items-center hover:cursor-pointer rounded-full hover:bg-[#1e2026] hover:text-red-500 p-1.5">
+                        <span class="material-symbols-outlined text-2xl">
                             favorite
                         </span>
                         <span class="text-base">1K</span>
                     </div>
-                    <div class="flex gap-1 items-center">
-                        <span
-                            class="material-symbols-outlined hover:cursor-pointer rounded-full hover:bg-[#1e2026] text-2xl">
+                    <div
+                        class="flex gap-1 items-center hover:cursor-pointer rounded-full hover:bg-[#1e2026] hover:text-sky-400 p-1.5">
+                        <span class="material-symbols-outlined text-2xl">
                             align_vertical_bottom
                         </span>
                         <span class="text-base">1K</span>
                     </div>
-                    <div class="flex gap-1 items-center">
-                        <span
-                            class="material-symbols-outlined text-2xl hover:cursor-pointer rounded-full hover:bg-[#1e2026] pt-1">
+                    <div
+                        class="flex gap-1 items-center hover:cursor-pointer rounded-full hover:bg-[#1e2026] hover:text-yellow-500 p-1.5">
+                        <span class="material-symbols-outlined text-2xl">
                             bookmark
                         </span>
-                        <span
-                            class="material-symbols-outlined hover:cursor-pointer rounded-full hover:bg-[#1e2026] text-2xl">
-                            ios_share
-                        </span>
+                        <span class="text-base">1K</span>
                     </div>
                 </div>
             </div>
@@ -601,67 +606,70 @@
                 <div class="User-details flex gap-2 p-4">
                     <div class="profile-pic w-10 h-9">
                         <img class="rounded-full w-10 h-9 hover:bg-opacity-80"
-                            src="https://pbs.twimg.com/profile_images/634514155261833216/czgYrPLQ_400x400.jpg"
+                            src="https://pbs.twimg.com/profile_images/1692162697637380096/gQ1i2kbw_400x400.jpg"
                             alt="profile-pic">
                     </div>
                     <div class="w-full">
-                        <div class="flex items-center h-5">
-                            <h4 class="font-semibold hover:underline hover:cursor-pointer">TRAVIS SCOTT</h4>
-                            <span class="material-symbols-outlined text-lg p-1 text-[#1d9bf0]">
-                                verified
-                            </span>
-                            <span class="opacity-50">@trvisXX · Jan 15</span>
+                        <div class="flex justify-between items-center h-fit">
+                            <div class="flex items-center">
+                                <h4 class="font-semibold hover:underline hover:cursor-pointer">Abel Tesfaye</h4>
+                                <span class="material-symbols-outlined text-lg p-1 text-[#1d9bf0]">
+                                    verified
+                                </span>
+                                <span class="opacity-50">@theweeknd · Jan 28</span>
+                            </div>
+
                             <span
-                                class="material-symbols-outlined opacity-50 rounded-full p-1 hover:cursor-pointer hover:bg-[#1e2026] relative left-[14rem]">
+                                class="material-symbols-outlined opacity-50 rounded-full p-1 hover:cursor-pointer hover:bg-[#1e2026]">
                                 more_horiz
                             </span>
                         </div>
-                        <span class=" leading-tight">😌🤯</span>
+                        <div class=" leading-tight text-start">Throwback to the time Jim Carrey explained how he got on
+                            The
+                            Weeknd’s “Dawn FM”📻 🌅.
+                        </div>
                     </div>
                 </div>
 
                 <div class="Content-post overflow-hidden  ml-16 mr-5 rounded-2xl">
-                    <img src="https://pbs.twimg.com/media/GD1XOGRXUAA9ROm?format=jpg&name=small" alt="loading_error">
+                    <img src="https://pbs.twimg.com/media/GAhxpJNWEAAP2We?format=jpg&name=small" alt="loading_error">
                 </div>
 
-                <div class="Likes_Share flex justify-between ml-16 mr-5 opacity-50 p-3">
-                    <div class="flex gap-1 items-center">
-                        <span
-                            class="material-symbols-outlined rounded-full hover:bg-[#1e2026] hover:cursor-pointer text-xl">
+                <div class="Likes_Share flex justify-between ml-16 mr-5 text-slate-400 my-2">
+                    <div
+                        class="flex gap-1 items-center hover:text-blue-600 hover:bg-[#1e2026] hover:cursor-pointer rounded-full p-1.5">
+                        <span class="material-symbols-outlined text-xl">
                             chat_bubble
                         </span>
                         <span class="text-base">1K</span>
                     </div>
-                    <div class="flex gap-1 items-center">
-                        <span
-                            class="material-symbols-outlined hover:cursor-pointer rounded-full hover:bg-[#1e2026] text-2xl">
+                    <div
+                        class="flex gap-1 items-center  hover:cursor-pointer rounded-full hover:bg-[#1e2026] hover:text-lime-400 p-1.5">
+                        <span class="material-symbols-outlined text-2xl">
                             sync
                         </span>
                         <span class="text-base">20K</span>
                     </div>
-                    <div class="flex gap-1 items-center">
-                        <span
-                            class="material-symbols-outlined hover:cursor-pointer rounded-full hover:bg-[#1e2026] text-2xl">
+                    <div
+                        class="flex gap-1 items-center hover:cursor-pointer rounded-full hover:bg-[#1e2026] hover:text-red-500 p-1.5">
+                        <span class="material-symbols-outlined text-2xl">
                             favorite
                         </span>
                         <span class="text-base">1K</span>
                     </div>
-                    <div class="flex gap-1 items-center">
-                        <span
-                            class="material-symbols-outlined hover:cursor-pointer rounded-full hover:bg-[#1e2026] text-2xl">
+                    <div
+                        class="flex gap-1 items-center hover:cursor-pointer rounded-full hover:bg-[#1e2026] hover:text-sky-400 p-1.5">
+                        <span class="material-symbols-outlined text-2xl">
                             align_vertical_bottom
                         </span>
                         <span class="text-base">1K</span>
                     </div>
-                    <div class="flex gap-1 items-center">
-                        <span
-                            class="material-symbols-outlined text-2xl hover:cursor-pointer rounded-full hover:bg-[#1e2026] pt-1">
+                    <div
+                        class="flex gap-1 items-center hover:cursor-pointer rounded-full hover:bg-[#1e2026] hover:text-yellow-500 p-1.5">
+                        <span class="material-symbols-outlined text-2xl">
                             bookmark
                         </span>
-                        <span
-                            class="material-symbols-outlined hover:cursor-pointer rounded-full hover:bg-[#1e2026] text-2xl">
-                            ios_share
-                        </span>
+                        <span class="text-base">1K</span>
                     </div>
                 </div>
             </div>
@@ -727,59 +735,68 @@
                 <h1 class="text-xl font-bold px-4 py-3">Who to follow</h1>
 
                 <!-- card -1  -->
-                <div class="Card flex gap-3 px-4 py-3 hover:bg-[#1e2026]">
-                    <div class="profile-pic w-12">
-                        <img class="rounded-full hover:bg-opacity-80"
-                            src="https://pbs.twimg.com/profile_images/1009746192761262081/t9_RTWvR_400x400.jpg"
-                            alt="profile-pic">
+                <div class="Card flex justify-between px-4 py-3 hover:bg-[#1e2026]">
+                    <div class="flex  gap-3">
+                        <div class="profile-pic w-12">
+                            <img class="rounded-full hover:bg-opacity-80"
+                                src="https://pbs.twimg.com/profile_images/1009746192761262081/t9_RTWvR_400x400.jpg"
+                                alt="profile-pic">
+                        </div>
+                        <div>
+                            <h4
+                                class="font-semibold text-base opacity-90 hover:cursor-pointer hover:underline text-nowrap">
+                                XXXTentacion</h4>
+                            <p class="opacity-50">@xxtentacion</p>
+                        </div>
                     </div>
-                    <div>
-                        <h4 class="font-semibold text-base opacity-90 hover:cursor-pointer hover:underline text-nowrap">
-                            XXXTentacion</h4>
-                        <p class="opacity-50">@xxtentacion</p>
-                    </div>
-                    <div class="follow-btn my-auto  ml-[68px]">
+                    <div class="follow-btn my-auto">
                         <button
                             class="bg-white text-black font-semibold px-4 py-1 rounded-full hover:bg-opacity-80">Follow</button>
                     </div>
                 </div>
 
-                <!-- card -2  -->
-                <div class="Card flex gap-3 px-4 py-3 hover:bg-[#1e2026]">
-                    <div class="profile-pic w-12">
-                        <img class="rounded-full hover:bg-opacity-80"
-                            src="https://pbs.twimg.com/profile_images/1594446880498401282/o4L2z8Ay_400x400.jpg"
-                            alt="profile-pic">
+                <!-- card - 2  -->
+                <div class="Card flex justify-between px-4 py-3 hover:bg-[#1e2026]">
+                    <div class="flex  gap-3">
+                        <div class="profile-pic w-12">
+                            <img class="rounded-full hover:bg-opacity-80"
+                                src="https://pbs.twimg.com/profile_images/1594446880498401282/o4L2z8Ay_400x400.jpg"
+                                alt="profile-pic">
+                        </div>
+                        <div>
+                            <h4
+                                class="font-semibold text-base opacity-90 hover:cursor-pointer hover:underline text-nowrap">
+                                Cristiano Ronaldo</h4>
+                            <p class="opacity-50">@cristianon</p>
+                        </div>
                     </div>
-                    <div>
-                        <h4 class="font-semibold text-base opacity-90 hover:cursor-pointer hover:underline text-nowrap">
-                            Cristiano Ronaldo</h4>
-                        <p class="opacity-50">@cristiano</p>
-                    </div>
-                    <div class="follow-btn my-auto  ml-10">
+                    <div class="follow-btn my-auto">
                         <button
                             class="bg-white text-black font-semibold px-4 py-1 rounded-full hover:bg-opacity-80">Follow</button>
                     </div>
                 </div>
 
-                <!-- card -3  -->
-                <div class="Card flex gap-3 px-4 py-3 hover:bg-[#1e2026]">
-                    <div class="profile-pic w-12">
-                        <img class="rounded-full hover:bg-opacity-80"
-                            src="https://pbs.twimg.com/profile_images/1387822869619478540/lhocXKtV_400x400.jpg"
-                            alt="profile-pic">
+                <!-- card - 3  -->
+                <div class="Card flex justify-between px-4 py-3 hover:bg-[#1e2026]">
+                    <div class="flex  gap-3">
+                        <div class="profile-pic w-12">
+                            <img class="rounded-full hover:bg-opacity-80"
+                                src="https://pbs.twimg.com/profile_images/1387822869619478540/lhocXKtV_400x400.jpg"
+                                alt="profile-pic">
+                        </div>
+                        <div>
+                            <h4
+                                class="font-semibold text-base opacity-90 hover:cursor-pointer hover:underline text-nowrap">
+                                Arijit Singh</h4>
+                            <p class="opacity-50">@arijitsingh</p>
+                        </div>
                     </div>
-                    <div>
-                        <h4 class="font-semibold text-base opacity-90 hover:cursor-pointer hover:underline text-nowrap">
-                            Arijit Singh</h4>
-                        <p class="opacity-50">@arijitsingh</p>
-                    </div>
-                    <div class="follow-btn my-auto ml-[85px]">
+                    <div class="follow-btn my-auto">
                         <button
-                            class="bg-white  text-black font-semibold px-4 py-1 rounded-full hover:bg-opacity-80">Follow</button>
+                            class="bg-white text-black font-semibold px-4 py-1 rounded-full hover:bg-opacity-80">Follow</button>
                     </div>
-
                 </div>
+
                 <div class="p-4 text-[#1d9bf0] hover:bg-[#1e2026] cursor-pointer hover:rounded-b-2xl">
                     Show More
                 </div>
@@ -787,8 +804,8 @@
         </section>
         <!-- Messeges -->
         <div
-            class="MESSAGES fixed bottom-0 right-2 bg-black hover:bg-[#1e2026] flex items-center w-80 rounded-t-lg shadow-inner shadow-slate-400">
-            <h4 class="font-bold w-60 p-3">Messages</h4>
+            class="MESSAGES fixed bottom-0 right-4  bg-black hover:bg-[#1e2026] flex items-center p-2 md:p-0 md:w-80 rounded-t-lg shadow-inner shadow-slate-400">
+            <h4 class="hidden md:block font-bold w-60 p-3">Messages</h4>
             <span class="material-symbols-outlined p-2 hover:cursor-pointer hover:opacity-80">
                 mark_email_unread
             </span>
@@ -800,14 +817,17 @@
 
 
     <script>
-        alert("This website is not ready yet, So please switch to desktop mode for better UI!")
+        // alert("This website is not ready yet, So please switch to desktop mode for better UI!");
 
         const input = document.querySelector('input');
         const public = document.querySelector('.PUBLIC');
+        const postBtn = document.querySelector('#postbtn');
 
         if (input)
             input.addEventListener('click', () => {
                 public.classList.remove('hidden')
+                postBtn.classList.remove('opacity-60')
+                postBtn.classList.add('hover:bg-opacity-80')
             });
 
     </script>
