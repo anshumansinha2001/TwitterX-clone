@@ -1,7 +1,6 @@
 ---
 
 # Twitter Clone with Tailwind CSS
-LIVE DEMO:- https://theanshumansinha.github.io/TwitterX-clone/
 
 ![Twitter Clone](ss0.png)
 
